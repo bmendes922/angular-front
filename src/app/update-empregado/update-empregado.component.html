@@ -1,0 +1,23 @@
+<div class="col-md-6 offset-med-3">
+    <h3>Atualizar Funcionario</h3>
+    <form (ngSubmit)="onSumit()">
+
+        <div class="form-group">
+            <label>Primeiro Nome</label>
+            <input type="text" class="form-control" id="primeiroNome" [(ngModel)]="empregado.primeiroNome"
+                name="primeiroNome">
+        </div>
+        <div class="form-group">
+            <label>Segundo Nome</label>
+            <input type="text" class="form-control" id="segundoNome" [(ngModel)]="empregado.segundoNome"
+                name="segundoNome">
+        </div>
+        <div class="form-group">
+            <label>Email Id</label>
+            <input type="text" class="form-control" id="emailId" [(ngModel)]="empregado.emailId" name="emailId">
+        </div>
+
+        <button class="btn btn-sucess" type="submit"> Salvar</button>
+
+    </form>
+</div>
